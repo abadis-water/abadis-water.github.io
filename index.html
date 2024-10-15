@@ -1,1 +1,192 @@
-<p>Hello World!</p>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abadis Water</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazir&display=swap');
+
+        body {
+            font-family: 'Vazir', Tahoma, Arial;
+            background-color: #f5f5f5;
+            color: #222;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2b2e4c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .banner-container {
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+        }
+
+        .banner {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 1s ease-in-out;
+            position: absolute;
+            text-align: center;
+        }
+
+        .gradient-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 0;
+        }
+
+        .banner video {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .banner h1, .banner p {
+            color: white;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+            position: relative;
+            z-index: 1;
+        }
+
+        .banner h1 {
+            font-size: 64px;
+            margin: 20px 0;
+        }
+
+        .banner p {
+            font-size: 32px;
+            margin: 10px 0;
+            margin-bottom: 48px;
+        }
+
+        .content-section {
+            display: flex;
+            align-items: center;
+            margin: 4%; /* 4% margin */
+            padding-top: 600px; /* Push down content */
+        }
+
+        .content-section img {
+            height: 100%;
+            margin-right: 20px;
+        }
+
+        .content-text {
+            flex: 1;
+        }
+
+        .button {
+            background-color: #E84C3D;
+            color: white;
+            padding: 12px 32px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            position: relative;
+            z-index: 1;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #c73833;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner-container">
+        <div class="banner" id="banner1">
+            <video autoplay loop muted>
+                <source src="img/abadis-factory.mp4" type="video/mp4">
+                مرورگر شما از ویدیو پشتیبانی نمی‌کند.
+            </video>
+            <div class="gradient-overlay"></div>
+            <div>
+                <h1 id="welcome-text"></h1>
+                <p id="dynamic-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="why-abadis">
+    </div>
+
+    <div class="content-section">
+        <div class="content-text">
+            <h2 id="dynamic-content-text">متن اولیه</h2>
+            <p>توضیحات مرتبط با آب معدنی Abadis که به تدریج تغییر می‌کند.</p>
+        </div>
+        <img src="img/Bottle-Dew.gif" alt="GIF">
+    </div>
+
+    <script>
+        const welcomeTexts = [
+            "خوش آمدید به دنیای شگفت‌انگیز آب معدنی Abadis!",
+            "با ما تجربه‌ای تازه و دلپذیر از آب معدنی داشته باشید.",
+            "آب معدنی ما، طعمی خنک و نشاط‌آور برای سلامتی شماست.",
+            "انتخاب آب معدنی Abadis، انتخابی سالم و طبیعی برای خانواده شما!"
+        ];
+
+        const contentTexts = [
+            "آب معدنی ما از چشمه‌های زلال و خالص سرچشمه می‌گیرد.",
+            "سلامت شما برای ما در اولویت است، پس با ما همراه باشید.",
+            "محصولات ما با کیفیت عالی و استانداردهای بین‌المللی تولید می‌شوند.",
+            "به آب معدنی Abadis خوش آمدید؛ جایی که کیفیت و سلامت دست به دست هم می‌دهند!"
+        ];
+
+        const descriptions = [
+            "کارخانه آب معدنی Abadis با هدف ارائه بهترین کیفیت آب معدنی طبیعی تأسیس شده است. آب ما از چشمه‌های زلال و خالص استخراج و با روش‌های نوین و استانداردهای بین‌المللی بسته‌بندی می‌شود. سلامت و رضایت مشتریان برای ما اهمیت ویژه‌ای دارد.",
+            "آب معدنی Abadis، با بالاترین کیفیت و از منابع طبیعی خالص تأمین می‌شود. مراحل تولید و بسته‌بندی ما مطابق با استانداردهای بهداشتی و ایمنی انجام می‌شود.",
+            "ما به شما اطمینان می‌دهیم که آب معدنی شما با سرعت و اطمینان به دستتان می‌رسد. با ما همراه باشید تا طعم واقعی آب معدنی را تجربه کنید."
+        ];
+
+        let currentIndex = 0;
+
+        function typeWriter(text, element, delay) {
+            let i = 0;
+            element.innerText = "";
+            const interval = setInterval(() => {
+                if (i < text.length) {
+                    element.innerText += text.charAt(i);
+                    i++;
+                } else {
+                    clearInterval(interval);
+                }
+            }, delay);
+        }
+
+        function changeTexts() {
+            currentIndex = (currentIndex + 1) % welcomeTexts.length;
+            typeWriter(welcomeTexts[currentIndex], document.getElementById("welcome-text"), 100);
+            typeWriter(contentTexts[currentIndex], document.getElementById("dynamic-text"), 100);
+            typeWriter(descriptions[currentIndex % descriptions.length], document.getElementById("dynamic-description"), 100);
+        }
+
+        setInterval(changeTexts, 8000);
+    </script>
+</body>
+</html>
