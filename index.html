@@ -1,206 +1,16 @@
+<!-- index.html -->
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="آب معدنی Abadis - بهترین کیفیت و طعم طبیعی در هر بطری.">
+    <meta name="keywords" content="آب معدنی, Abadis, آب, نوشیدنی, طبیعی">
     <title>آب معدنی Abadis</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js" defer></script>
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <style>
-    
-        @import url('https://fonts.googleapis.com/css2?family=Vazir&display=swap');
-
-        body {
-            font-family: 'Vazir', Tahoma, Arial;
-            background-color: #f5f5f5;
-            color: #222;
-            direction: rtl;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-
-        header {
-            background-color: #2b2e4c;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .banner-container {
-            position: relative;
-            overflow: hidden;
-            min-height: 100vh;
-        }
-
-        .banner {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            text-align: center;
-            transition: opacity 1s ease-in-out;
-        }
-
-        .gradient-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.3);
-            z-index: 0;
-        }
-
-        .banner video {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        .banner h1, .banner p {
-            color: white;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
-            position: relative;
-            z-index: 1;
-        }
-
-        .banner h1 {
-            font-size: 64px;
-            margin: 20px 0;
-        }
-
-        .banner p {
-            font-size: 32px;
-            margin: 10px 0;
-            margin-bottom: 48px;
-        }
-
-        .content-section {
-            display: flex;
-            align-items: center;
-            margin: 4% 6% 0 0;
-            opacity: 0;
-            transform: translateY(-50px);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-            height: 100vh;
-        }
-
-        .dynamic-content {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            position: relative;
-        }
-
-        .dynamic-content .text {
-            flex: 1;
-            padding: 20px;
-            max-width: 50%;
-            text-align: justify;
-        }
-
-        .dynamic-content img {
-            height: 540px;
-            width: auto;
-            transition: transform 0.3s ease;
-        }
-
-        .scrolling-gif {
-            position: fixed; /* Make it fixed */
-            bottom: 160px; /* Adjust this as needed */
-            left: 60px; /* Adjust this as needed */
-            width: 580px; /* Set width to 600px */
-            transition: transform 0.2s ease; /* Smooth transition */
-        }
-
-        .products {
-            display: flex;
-            justify-content: center;
-            margin: 40px 0;
-        }
-
-        .product {
-            position: relative;
-            margin: 0 54px;
-            transition: transform 0.3s;
-        }
-
-        .product img {
-            height: 340px;
-        }
-
-        .blog {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            margin: 0 8%;
-        }
-
-        .blog-tile {
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.3s;
-        }
-
-        .blog-tile img {
-            width: auto;
-            height: 260px;
-            display: block;
-            transition: transform 0.3s;
-        }
-
-        .blog-tile .blog-info {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            transform: translateY(100%);
-            transition: transform 0.3s;
-        }
-
-        .blog-tile:hover .blog-info {
-            transform: translateY(0);
-        }
-
-        .navigation {
-            position: fixed;
-            right: 32px;
-            top: 120px;
-            display: flex;
-            flex-direction: column;
-            gap: 32px;
-            z-index: 10;
-        }
-
-        .nav-circle {
-            width: 42px;
-            height: 42px;
-            background-color: rgba(255, 255, 255, 0.4);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #000;
-            font-size: 18px;
-            transition: background-color 0.3s;
-            cursor: pointer;
-        }
-
-        .nav-circle:hover {
-            background-color: rgba(255, 255, 255, 1);
-            color: #000;
-        }
-    </style>
 </head>
 <body>
     <div class="banner-container">
@@ -217,86 +27,73 @@
         </div>
     </div>
 
-    <div class="content-section" id="contentSection1">
-        <div class="dynamic-content">
-          <div class="text">
-    <h2>دشت دیمه</h2>
-    <p>
-        دشت دیمه و منطقه کوهرنگ در استان چهارمحال و بختیاری واقع شده‌اند و به خاطر زیبایی‌های طبیعی و آب و هوای خاص‌شان شناخته می‌شوند. دشت دیمه یکی از دشت‌های زیبا و سرسبز این منطقه است که معمولاً در فصل‌های بهار و تابستان پر از گل‌های وحشی و چمن‌زارهای سرسبز می‌شود. این دشت به دلیل موقعیت جغرافیایی‌اش، محیطی مناسب برای گردشگران و طبیعت‌دوستان فراهم می‌آورد. کوهرنگ نیز به خاطر طبیعت بکر و چشم‌اندازهای کوهستانی‌اش معروف است. این منطقه به عنوان یکی از مقاصد محبوب گردشگری شناخته می‌شود و در فصل‌های مختلف سال بازدیدکنندگان زیادی دارد. همچنین، آبشارها و چشمه‌های فراوانی در این ناحیه وجود دارد. آب و هوای دشت دیمه و کوهرنگ به طور کلی کوهستانی و معتدل است. در فصل بهار و تابستان، دما ملایم و دلپذیر است، اما در زمستان ممکن است به شدت سرد شود و برف ببارد. بارش برف و باران در این منطقه نسبتاً زیاد است و این امر باعث سرسبزی و زیبایی طبیعی آن می‌شود.
-    </p>
-</div>
-
-
-
-
-            <img class="scrolling-gif" src="img/Bottle-Dew.gif" alt="GIF" id="bottleGif">
-        </div>
-    </div>
-
-    <div class="content-section" id="contentSection2">
-        <div class="dynamic-content">
-            <div class="text">
-                <h2>متن بخش دوم</h2>
-                <p>این بخش شامل توضیحات بیشتری درباره کیفیت محصولات ماست.</p>
+    <div class="content-wrapper">
+        <div class="content-section" id="contentSection1">
+            <div class="dynamic-content">
+                <div class="text">
+                    <h2>دشت دیمه</h2>
+                    <p>
+                        دشت دیمه و منطقه کوهرنگ در استان چهارمحال و بختیاری واقع شده‌اند و به خاطر زیبایی‌های طبیعی و آب و هوای خاص‌شان شناخته می‌شوند. دشت دیمه یکی از دشت‌های زیبا و سرسبز این منطقه است که معمولاً در فصل‌های بهار و تابستان پر از گل‌های وحشی و چمن‌زارهای سرسبز می‌شود. این دشت به دلیل موقعیت جغرافیایی‌اش، محیطی مناسب برای گردشگران و طبیعت‌دوستان فراهم می‌آورد.
+                    </p>
+                </div>
+                <img class="scrolling-gif" src="img/Bottle-Dew.gif" alt="GIF" id="bottleGif" loading="lazy">
             </div>
         </div>
-    </div>
 
-    <!-- بخش جدید ۱ -->
-    <div class="content-section" id="contentSection3">
-        <div class="dynamic-content">
-            <div class="text">
-                <h2>سوالات متداول</h2>
-                <p>در این بخش به سوالات متداول مشتریان پاسخ داده می‌شود. اگر سوالی دارید، می‌توانید با ما تماس بگیرید.</p>
+        <div class="content-section" id="contentSection2">
+            <div class="dynamic-content">
+                <div class="text">
+                    <h2>متن بخش دوم</h2>
+                    <p>این بخش شامل توضیحات بیشتری درباره کیفیت محصولات ماست.</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- بخش جدید ۲ -->
-    <div class="content-section" id="contentSection4">
-        <div class="dynamic-content">
-            <div class="text">
-                <h2>نظرات مشتریان</h2>
-                <p>نظرات مشتریان ما را درباره محصولات و خدماتمان مشاهده کنید. ما به نظرات شما اهمیت می‌دهیم.</p>
+        <div class="content-section" id="contentSection3">
+            <div class="dynamic-content">
+                <div class="text">
+                    <h2>سوالات متداول</h2>
+                    <p>در این بخش به سوالات متداول مشتریان پاسخ داده می‌شود. اگر سوالی دارید، می‌توانید با ما تماس بگیرید.</p>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="products" id="productsSection">
         <div class="product">
-            <img src="img/product_1.png" alt="Bottle 1">
+            <img src="img/product_1.png" alt="Bottle 1" loading="lazy">
         </div>
         <div class="product">
-            <img src="img/product_2.png" alt="Bottle 2">
+            <img src="img/product_2.png" alt="Bottle 2" loading="lazy">
         </div>
         <div class="product">
-            <img src="img/product_3.png" alt="Bottle 3">
+            <img src="img/product_3.png" alt="Bottle 3" loading="lazy">
         </div>
         <div class="product">
-            <img src="img/product_4.png" alt="Bottle 4">
+            <img src="img/product_4.png" alt="Bottle 4" loading="lazy">
         </div>
         <div class="product">
-            <img src="img/product_5.png" alt="Bottle 5">
+            <img src="img/product_5.png" alt="Bottle 5" loading="lazy">
         </div>
     </div>
 
     <div class="blog" id="blogSection">
         <div class="blog-tile">
-            <img src="img/blog_1.png" alt="Blog 1">
+            <img src="img/blog_1.png" alt="Blog 1" loading="lazy">
             <div class="blog-info">
                 <h2>عنوان بلاگ ۱</h2>
                 <p>توضیح کوتاهی درباره این مطلب.</p>
             </div>
         </div>
         <div class="blog-tile">
-            <img src="img/blog_2.png" alt="Blog 2">
+            <img src="img/blog_2.png" alt="Blog 2" loading="lazy">
             <div class="blog-info">
                 <h2>عنوان بلاگ ۲</h2>
                 <p>توضیح کوتاهی درباره این مطلب.</p>
             </div>
         </div>
         <div class="blog-tile">
-            <img src="img/blog_3.png" alt="Blog 3">
+            <img src="img/blog_3.png" alt="Blog 3" loading="lazy">
             <div class="blog-info">
                 <h2>عنوان بلاگ ۳</h2>
                 <p>توضیح کوتاهی درباره این مطلب.</p>
@@ -305,157 +102,51 @@
     </div>
 
     <div class="navigation">
-        <div class="nav-circle" onclick="scrollToSection('banner1')" title="خانه">
+        <div class="nav-circle" onclick="scrollToSection('banner1')" title="خانه" aria-label="خانه">
             <i class="fas fa-home"></i>
         </div>
-        <div class="nav-circle" onclick="scrollToSection('contentSection1')" title="درباره‌ی ما">
+        <div class="nav-circle" onclick="scrollToSection('contentSection1')" title="درباره‌ی ما" aria-label="درباره‌ی ما">
             <i class="fas fa-info-circle"></i>
         </div>
-        <div class="nav-circle" onclick="scrollToSection('contentSection2')" title="مزیت‌ها">
+        <div class="nav-circle" onclick="scrollToSection('contentSection2')" title="مزیت‌ها" aria-label="مزیت‌ها">
             <i class="fas fa-star"></i>
         </div>
-        <div class="nav-circle" onclick="scrollToSection('productsSection')" title="لیست محصولات">
+        <div class="nav-circle" onclick="scrollToSection('productsSection')" title="لیست محصولات" aria-label="لیست محصولات">
             <i class="fas fa-box"></i>
         </div>
-        <div class="nav-circle" onclick="scrollToSection('blogSection')" title="وبلاگ">
+        <div class="nav-circle" onclick="scrollToSection('blogSection')" title="وبلاگ" aria-label="وبلاگ">
             <i class="fas fa-blog"></i>
         </div>
-        <div class="nav-circle" onclick="scrollToSection('contactSection')" title="تماس با ما">
+        <div class="nav-circle" onclick="scrollToSection('contactSection')" title="تماس با ما" aria-label="تماس با ما">
             <i class="fas fa-envelope"></i>
         </div>
     </div>
 
+    <footer>
+        <p>© 2024 آب معدنی Abadis. تمام حقوق محفوظ است.</p>
+        <div>
+            <a href="#" title="فیس‌بوک"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="اینستاگرام"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="توئیتر"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
     <script>
-function updateNavButtonColors() {
-    const navCircles = document.querySelectorAll('.nav-circle');
-    const bodyBackgroundColor = getComputedStyle(document.body).backgroundColor;
-
-    const rgbToHex = (rgb) => {
-        const rgbArray = rgb.match(/\d+/g);
-        return `#${((1 << 24) + (parseInt(rgbArray[0]) << 16) + (parseInt(rgbArray[1]) << 8) + parseInt(rgbArray[2])).toString(16).slice(1)}`;
-    };
-
-    const backgroundColorHex = rgbToHex(bodyBackgroundColor);
-
-    if (backgroundColorHex === '#ffffff') { // اگر پس‌زمینه سفید باشد
-        navCircles.forEach(circle => {
-            circle.style.backgroundColor = '#000'; // دکمه‌ها سیاه
-            circle.style.color = '#fff'; // متن دکمه‌ها سفید
-        });
-    } else { // اگر پس‌زمینه تیره باشد
-        navCircles.forEach(circle => {
-            circle.style.backgroundColor = 'rgba(255, 255, 255, 0.4)'; // دکمه‌ها سفید شفاف
-            circle.style.color = '#000'; // متن دکمه‌ها سیاه
-        });
-    }
-}
-
-// فراخوانی تابع هنگام بارگذاری صفحه و اسکرول
-window.onload = updateNavButtonColors;
-window.onscroll = updateNavButtonColors;
-
-const welcomeTexts = [
-    "خوش آمدید به دنیای شگفت‌انگیز آب معدنی Abadis!",
-    "با ما تجربه‌ای تازه و دلپذیر از آب معدنی داشته باشید.",
-    "آب معدنی ما، طعمی خنک و نشاط‌آور برای سلامتی شماست.",
-    "انتخاب آب معدنی Abadis، انتخابی سالم و طبیعی برای خانواده شما!"
-];
-
-const contentTexts = [
-    "آب معدنی ما از چشمه‌های زلال و خالص سرچشمه می‌گیرد.",
-    "سلامت شما برای ما در اولویت است، پس با ما همراه باشید.",
-    "محصولات ما با کیفیت عالی و استانداردهای بین‌المللی تولید می‌شوند.",
-    "به آب معدنی Abadis خوش آمدید؛ جایی که کیفیت و سلامت دست به دست هم می‌دهند!"
-];
-
-let currentIndex = 0;
-
-function typeWriter(text, element, delay) {
-    let i = 0;
-    element.innerText = "";
-    const interval = setInterval(() => {
-        if (i < text.length) {
-            element.innerText += text.charAt(i);
-            i++;
-        } else {
-            clearInterval(interval);
-        }
-    }, delay);
-}
-
-function changeTexts() {
-    currentIndex = (currentIndex + 1) % welcomeTexts.length;
-    typeWriter(welcomeTexts[currentIndex], document.getElementById("welcome-text"), 100);
-    typeWriter(contentTexts[currentIndex], document.getElementById("dynamic-text"), 100);
-}
-
-function showContent() {
-    document.getElementById("contentSection").style.opacity = 1;
-    document.getElementById("contentSection").style.transform = "translateY(0)";
-}
-
-function showBlog() {
-    document.getElementById("blogSection").style.opacity = 1;
-    document.getElementById("blogSection").style.transform = "translateY(0)";
-}
-
-function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    section.scrollIntoView({ behavior: 'smooth' });
-}
-
-setInterval(changeTexts, 8000);
-changeTexts();
-
-setTimeout(showContent, 500); // Show content section
-setTimeout(showBlog, 2000); // Show blog section
         function scrollToSection(sectionId) {
             const section = document.getElementById(sectionId);
             section.scrollIntoView({ behavior: 'smooth' });
         }
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const welcomeText = document.getElementById('welcome-text');
-            const dynamicText = document.getElementById('dynamic-text');
+        document.addEventListener("DOMContentLoaded", function() {
+            const contentWrapper = document.querySelector('.content-wrapper');
 
-            welcomeText.textContent = 'به آب معدنی Abadis خوش آمدید!';
-            dynamicText.textContent = 'محصولات با کیفیت و طبیعی ما را کشف کنید.';
-        });
+            contentWrapper.addEventListener('scroll', () => {
+                const scrollingGif = document.getElementById('bottleGif');
+                const scrollPosition = contentWrapper.scrollTop;
 
-        const sections = document.querySelectorAll('.content-section');
-        const observerOptions = {
-            root: null,
-            threshold: 0.1
-        };
-
-        const observerCallback = (entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = 1;
-                    entry.target.style.transform = 'translateY(0)';
-                }
+                // حرکت GIF پس از اسکرول
+                scrollingGif.style.transform = `translateY(${scrollPosition * 0.3}px)`; // حرکت GIF به سمت پایین
             });
-        };
-
-        const observer = new IntersectionObserver(observerCallback, observerOptions);
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-
-        // Move the GIF with scroll
-        const bottleGif = document.getElementById('bottleGif');
-        const contentSection2 = document.getElementById('contentSection2');
-
-        window.addEventListener('scroll', () => {
-            const scrollTop = window.scrollY;
-            const contentOffset = contentSection2.getBoundingClientRect().top + window.scrollY;
-
-            // Stop GIF at the end of the second content section
-            if (scrollTop < contentOffset - window.innerHeight + 100) {
-                bottleGif.style.transform = `translateY(${scrollTop * 0.5}px)`;
-            } else {
-                bottleGif.style.transform = `translateY(${contentOffset - bottleGif.offsetHeight - 20}px)`; // Adjust position
-            }
         });
     </script>
 </body>
