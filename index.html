@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js" defer></script>
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="preload" href="img/abadis-factory.mp4" as="video">
 </head>
 <body>
     <div class="banner-container">
@@ -130,24 +131,5 @@
             <a href="#" title="توئیتر"><i class="fab fa-twitter"></i></a>
         </div>
     </footer>
-
-    <script>
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-
-        document.addEventListener("DOMContentLoaded", function() {
-            const contentWrapper = document.querySelector('.content-wrapper');
-
-            contentWrapper.addEventListener('scroll', () => {
-                const scrollingGif = document.getElementById('bottleGif');
-                const scrollPosition = contentWrapper.scrollTop;
-
-                // حرکت GIF پس از اسکرول
-                scrollingGif.style.transform = `translateY(${scrollPosition * 0.3}px)`; // حرکت GIF به سمت پایین
-            });
-        });
-    </script>
 </body>
 </html>

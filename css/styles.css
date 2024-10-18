@@ -1,10 +1,8 @@
 /* styles.css */
 @font-face {
     font-family: 'Vazir';
-    src: url('../fonts/Vazir.woff2') format('woff2'),
-         url('../fonts/Vazir.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    src: url('fonts/Vazir.woff2') format('woff2'),
+         url('fonts/Vazir.woff') format('woff');
 }
 
 body {
@@ -15,6 +13,12 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+      text-rendering: optimizeLegibility;
+}
+
+body, p, h1, h2 {
+    white-space: normal;
+    letter-spacing: normal;
 }
 
 header {
@@ -105,14 +109,14 @@ header {
 }
 
 .dynamic-content img {
-    height: 540px;
+    height: 420px;
     width: auto;
     transition: transform 0.3s ease;
 }
 
 .scrolling-gif {
     position: fixed;
-    bottom: 160px;
+    bottom: 320px;
     left: 60px;
     transition: transform 0.5s ease;
     transform: translateY(50px);
@@ -179,30 +183,32 @@ header {
 .navigation {
     position: fixed;
     right: 32px;
-    top: 120px;
+    top: 90px;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 36px;
     z-index: 10;
 }
 
 .nav-circle {
-    width: 42px;
-    height: 42px;
-    background-color: rgba(255, 255, 255, 0.4);
+    width: 48px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #000;
-    font-size: 18px;
-    transition: background-color 0.3s;
+    font-size: 20px;
     cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .nav-circle:hover {
     background-color: rgba(255, 255, 255, 1);
     color: #000;
+    transform: scale(1.25);
+    transition: transform 0.6s, background-color 0.3s, color 0.3s;
 }
 
 @media (max-width: 768px) {
