@@ -7,30 +7,13 @@
 
 body {
     font-family: 'Vazir', Tahoma, Arial;
-    background-color: #f5f5f5;
-    color: #222;
+    background-color: #f9f9f9;
     direction: rtl;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-      text-rendering: optimizeLegibility;
-}
-
-body, p, h1, h2 {
-    white-space: normal;
-    letter-spacing: normal;
-}
-
-header {
-    background-color: #2b2e4c;
-    color: white;
-    padding: 20px;
-    text-align: center;
 }
 
 .banner-container {
-    position: relative;
-    overflow: hidden;
     min-height: 100vh;
 }
 
@@ -41,9 +24,6 @@ header {
     justify-content: center;
     align-items: center;
     position: absolute;
-    text-align: center;
-    transition: opacity 1s ease-in-out;
-    padding: 20px; /* اضافه کردن فاصله داخلی */
 }
 
 .gradient-overlay {
@@ -52,8 +32,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 0;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .banner video {
@@ -62,34 +41,31 @@ header {
     object-fit: cover;
     position: absolute;
     top: 0;
-    left: 0;
 }
 
 .banner h1, .banner p {
     color: white;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
     position: relative;
-    z-index: 1;
-    max-width: 70%;
     margin: 0 auto;
+    z-index: 1;
 }
 
 .banner h1 {
-    font-size: 58px;
+    font-size: 50px;
     margin: 20px 0;
 }
 
 .banner p {
-    font-size: 32px;
-    margin: 10px 0 48px 0;
+    font-size: 30px;
 }
 
 .content-section {
     display: flex;
     align-items: center;
-    margin: 4% 6% 0 0;
+    margin: 10% 6% 0 0;
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-30px);
     transition: opacity 0.5s ease, transform 0.5s ease;
     height: 100vh;
 }
