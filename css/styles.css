@@ -120,14 +120,14 @@ section {
 
 .product {
     flex: 1 1 200px;
-    max-width: 250px;
+    max-width: 240px;
     margin: 0 auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 300px;
+    max-height: 280px;
 }
 
 .product img {
