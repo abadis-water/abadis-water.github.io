@@ -58,16 +58,16 @@ body {
 }
 
 .banner h1 {
-    font-size: 40px;
+    font-size: 38px;
     margin: 28px 0;
 }
 
 .banner p {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .content-wrapper {
-    margin: 0 8%;
+    margin: 0 10%;
 }
 
 section {
